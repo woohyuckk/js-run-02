@@ -16,8 +16,8 @@
 // TODO: chunkArray 함수를 작성하세요.
 function chunkArray(arr, size) {
   const result = [];
-  for(i=0; i<(arr.length/size); i++){
-    result[i] = arr.slice(size*i,i*size+2) 
+  for(let i=0; i<(arr.length/size); i++){
+    result[i] = arr.slice(i*size,i*size+size) 
   }
   return result
 
@@ -26,3 +26,23 @@ function chunkArray(arr, size) {
 
 // export를 수정하지 마세요.
 export { chunkArray };
+
+// const arr = [1, 2, 3, 4, 5];
+// const size = 3;
+
+
+// function chunkArray(arr, size) {
+
+//   const result = [];
+
+//   for (i = 0; i < (arr.length / size); i++) {
+//     result[i] = arr.slice(i * size, i * size + size);
+//   }
+
+//   // i=0 result[0] arr.slice(0,size);
+//   // i=1 result[1] arr.slice(size,2size)
+
+//   console.log(result);
+//   return result
+// }
+

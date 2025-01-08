@@ -23,7 +23,7 @@
 // TODO: findUserByName 함수를 작성하세요.
 function findUserByName(users, name) {
     let result = users.find(user => user.name === name);
-    return result;
+    return result || null;
 }
 
 // TODO: findIndexOf 함수를 작성하세요.
