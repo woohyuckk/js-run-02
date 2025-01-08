@@ -12,10 +12,16 @@
  */
 
 // TODO: filterEven 함수를 작성하세요.
-function filterEven() {}
+function filterEven(arr) {
+    let filterEven= arr.filter( element => element%2 ===0 )
+    return filterEven;
+}
 
 // TODO: filterOdd 함수를 작성하세요.
-function filterOdd() {}
+function filterOdd(arr) {
+    let filterOdd= arr.filter( element => element%2 !==0 )
+    return filterOdd;
+}
 
 // export를 수정하지 마세요.
 export { filterEven, filterOdd };

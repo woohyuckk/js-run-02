@@ -24,7 +24,13 @@
  */
 
 // TODO: get20sEmail 함수를 작성하세요.
-function get20sEmail() {}
+function get20sEmail(arr) {
+    const email = arr.filter(person => person.age >= 20 && person.age <30)
+    .sort((a,b) => a.age -b.age)
+    .map(person => person.email);
+// arr의 배열은 객체 
+    return email
+}
 
 // export를 수정하지 마세요.
 export { get20sEmail };

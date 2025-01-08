@@ -12,6 +12,12 @@
 
 // TODO: calculateStatistics 함수를 작성하세요.
 function calculateStatistics(users) {
+  const sumAge = users.reduce((acc,pre)=>{return acc + pre.age} , 0);
+  let averageAge = sumAge/users.length;
+  // let maxAge = users.sort((a,b) => b.age - a.age )[0];
+  let maxAge = users.reduce((acc2,cur2) =>{return Math.max(acc2, cur2)});
+
+  return averageAge,maxAge;
   // TODO
 }
 

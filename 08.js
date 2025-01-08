@@ -15,6 +15,12 @@
 
 // TODO: chunkArray 함수를 작성하세요.
 function chunkArray(arr, size) {
+  const result = [];
+  for(i=0; i<(arr.length/size); i++){
+    result[i] = arr.slice(size*i,i*size+2) 
+  }
+  return result
+
   // TODO
 }
 
